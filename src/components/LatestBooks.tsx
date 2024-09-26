@@ -56,19 +56,21 @@ const LatestBooks = () => {
                         <CarouselContent>
                             {books.map((book: any) => (
                                 <CarouselItem key={book.id} className="basis-1/2 md:basis-1/5">
-                                    <Card>
-                                        <CardHeader>
-                                            <img className="h-40 md:h-60" src={book.coverImage} alt="cover-image" />
-                                        </CardHeader>
-                                        <CardContent>
-                                            <CardTitle className="whitespace-nowrap overflow-hidden text-ellipsis">{book.name}</CardTitle>
-                                            <p className="whitespace-nowrap overflow-hidden text-ellipsis">{book.author}</p>
-                                            <p><span className="text-5x1 font-semibold">₹{book.price}   </span><span className="line-through text-9">{book.oldPrice}</span><span className="text-green-600">   {book.discount}%</span></p>
-                                            <Link to='/book-details'>
-                                                <Button className="w-full mt-4">Add to Card</Button>
-                                            </Link>
-                                        </CardContent>
-                                    </Card>
+                                    <Link to='/book-details'>
+                                        <Card>
+                                            <CardHeader>
+                                                <img className="h-40 md:h-60" src={book.coverImage} alt="cover-image" />
+                                            </CardHeader>
+                                            <CardContent>
+                                                <CardTitle className="whitespace-nowrap overflow-hidden text-ellipsis">{book.name}</CardTitle>
+                                                <p className="whitespace-nowrap overflow-hidden text-ellipsis">{book.author}</p>
+                                                <p><span className="text-5x1 font-semibold">₹{book.price}   </span><span className="line-through text-9">{book.oldPrice}</span><span className="text-green-600">   {book.discount}%</span></p>
+                                                <Link to='/book-details'>
+                                                    <Button className="w-full mt-4">Add to Card</Button>
+                                                </Link>
+                                            </CardContent>
+                                        </Card>
+                                    </Link>
                                 </CarouselItem>
                             ))}
 
@@ -86,19 +88,21 @@ const LatestBooks = () => {
                         <CarouselContent>
                             {topRatedBooks.map((book: any) => (
                                 <CarouselItem key={book.id} className="basis-1/2 md:basis-1/5">
-                                    <Card>
-                                        <CardHeader>
-                                            <img className="h-40 md:h-60" src={book.coverImage} alt="cover-image" />
-                                        </CardHeader>
-                                        <CardContent>
-                                            <CardTitle className="whitespace-nowrap overflow-hidden text-ellipsis">{book.name}</CardTitle>
-                                            <p className="whitespace-nowrap overflow-hidden text-ellipsis">{book.author}</p>
-                                            <p><span className="text-5x1 font-semibold">₹{book.price}   </span><span className="line-through text-9">{book.oldPrice}</span><span className="text-green-600">   {book.discount}%</span></p>
-                                            <Link to='/book-details'>
-                                                <Button className="w-full mt-4">Add to Card</Button>
-                                            </Link>
-                                        </CardContent>
-                                    </Card>
+                                    <Link to='/book-details'>
+                                        <Card>
+                                            <CardHeader>
+                                                <img className="h-40 md:h-60" src={book.coverImage} alt="cover-image" />
+                                            </CardHeader>
+                                            <CardContent>
+                                                <CardTitle className="whitespace-nowrap overflow-hidden text-ellipsis">{book.name}</CardTitle>
+                                                <p className="whitespace-nowrap overflow-hidden text-ellipsis">{book.author}</p>
+                                                <p><span className="text-5x1 font-semibold">₹{book.price}   </span><span className="line-through text-9">{book.oldPrice}</span><span className="text-green-600">   {book.discount}%</span></p>
+                                                <Link to='/book-details'>
+                                                    <Button className="w-full mt-4">Add to Card</Button>
+                                                </Link>
+                                            </CardContent>
+                                        </Card>
+                                    </Link>
                                 </CarouselItem>
                             ))}
 

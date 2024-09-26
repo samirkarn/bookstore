@@ -20,7 +20,7 @@ const SellWithUs = () => {
                         <p>Already have an Account then</p>
                         <div className='flex justify-center my-4'>
                             <Link to='/seller-login'>
-                                <Button className='bg-none border hover:opacity-50'>Create an account as seller</Button>
+                                <Button className='bg-none border hover:opacity-50'>Login as seller</Button>
                             </Link>
                         </div>
                     </div>

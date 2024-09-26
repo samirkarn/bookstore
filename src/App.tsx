@@ -8,6 +8,9 @@ import SellWithUs from "./pages/SellWithUs";
 import SellerSignup from "./pages/SellerSignup";
 import SellerLogin from "./pages/SellerLogin";
 import BookDetails from "./pages/BookDetails";
+import SellerDashboard from "./pages/SellerDashboard";
+import BooksManagement from "./pages/BooksManagement";
+import BuyerManagement from "./pages/BuyerManagement";
 
 function App() {
   return (
@@ -22,6 +25,9 @@ function App() {
         <Route path='/seller-signup' element={<SellerSignup />} />
         <Route path='/seller-login' element={<SellerLogin />} />
         <Route path='/book-details' element={<BookDetails />} />
+        <Route path='/dashboard' element={<SellerDashboard />} />
+        <Route path='/books' element={<BooksManagement />} />
+        <Route path='/buyers' element={<BuyerManagement />} />
       </Routes>
     </>
   )

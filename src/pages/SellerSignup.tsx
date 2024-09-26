@@ -1,42 +1,42 @@
 
 import {
-    Card,
-    CardContent,
-    CardHeader,
+  Card,
+  CardContent,
+  CardHeader,
 } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {
-    Select,
-    SelectContent,
-    SelectItem,
-    SelectTrigger,
-    SelectValue,
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
 } from "@/components/ui/select"
 import { cn } from "@/lib/utils"
 import { Calendar } from "@/components/ui/calendar"
 import {
-    Popover,
-    PopoverContent,
-    PopoverTrigger,
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
 } from "@/components/ui/popover"
 import React, { useState } from "react";
 import { format } from "date-fns"
 
 const SellerSignup = () => {
-    const [date, setDate] = React.useState<Date>()
+  const [date, setDate] = React.useState<Date>()
 
-    const handleSubmit = (e: any) => {
-        e.preventDefault();
-    };
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+  };
 
-    return (
-        <>
-            <div className='relative bg-sell bg-center bg-cover flex justify-center items-center px-4 py-10 md:px-0'>
-                <div className='absolute inset-0 bg-black opacity-80'></div>
-                <Card className="relative z-50 w-full max-w-lg p-4">
-                <CardHeader className="text-center text-sm md:text-2xl font-bold">
+  return (
+    <>
+      <div className='relative bg-sell bg-center bg-cover flex justify-center items-center px-4 py-10 md:px-0'>
+        <div className='absolute inset-0 bg-black opacity-80'></div>
+        <Card className="relative z-50 w-full max-w-lg p-4">
+          <CardHeader className="text-center text-sm md:text-2xl font-bold">
             <p className="cursor-pointer text-4xl font-bold text-pink-800"><a href="/">
               BookStore
             </a></p>
@@ -109,7 +109,7 @@ const SellerSignup = () => {
                   </SelectContent>
                 </Select>
               </div>
-              <hr className="mt-2"/>
+              <hr className="mt-2" />
               <p className="text-lg font-semibold mt-2">Address details</p>
               <div className="flex flex-col md:flex-row gap-4 ">
                 <div>
@@ -141,7 +141,7 @@ const SellerSignup = () => {
                   <Input placeholder="Enter your pincode" type="text" />
                 </div>
               </div>
-              <hr className="my-2"/>
+              <hr className="my-2" />
               <p className="text-lg font-semibold">Bank details</p>
               <div className="flex flex-col md:flex-row gap-4 ">
                 <div>
@@ -163,7 +163,9 @@ const SellerSignup = () => {
                   <Input placeholder="Enter your account number" type="text" />
                 </div>
               </div>
-              <Button type="submit" className="w-full mt-4">Submit</Button>
+              <Link to='/dashboard' >
+                <Button type="submit" className="w-full mt-4">Submit</Button>
+              </Link>
             </form>
             <p className="mt-2 text-sm">
               Already have an account?{" "}
@@ -172,10 +174,10 @@ const SellerSignup = () => {
               </span>
             </p>
           </CardContent>
-                </Card>
-            </div>
-        </>
-    )
+        </Card>
+      </div>
+    </>
+  )
 }
 
 export default SellerSignup

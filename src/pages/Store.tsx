@@ -35,6 +35,7 @@ import {
 } from "@/components/ui/drawer"
 import { FaSortAmountDown } from "react-icons/fa";
 import { CiFilter } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 
 interface Book {
@@ -311,17 +312,19 @@ const Store = () => {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-5 px-4 py-4">
             {books.map((book) => (
-              <Card key={book.id}>
-                <CardHeader>
-                  <img className="cover-img" src={book.coverImage} alt="cover-image" />
-                </CardHeader>
-                <CardContent>
-                  <CardTitle className="whitespace-nowrap overflow-hidden text-ellipsis">{book.name}</CardTitle>
-                  <p className="whitespace-nowrap overflow-hidden text-ellipsis">{book.author}</p>
-                  <p><span className="text-5x1 font-semibold">₹{book.price}   </span><span className="line-through text-9">{book.oldPrice}</span><span className="text-green-600">   {book.discount}%</span></p>
-                  <Button className="w-full mt-4">Add to Card</Button>
-                </CardContent>
-              </Card>
+              <Link key={book.id} to='/book-details'>
+                <Card >
+                  <CardHeader>
+                    <img className="cover-img" src={book.coverImage} alt="cover-image" />
+                  </CardHeader>
+                  <CardContent>
+                    <CardTitle className="whitespace-nowrap overflow-hidden text-ellipsis">{book.name}</CardTitle>
+                    <p className="whitespace-nowrap overflow-hidden text-ellipsis">{book.author}</p>
+                    <p><span className="text-5x1 font-semibold">₹{book.price}   </span><span className="line-through text-9">{book.oldPrice}</span><span className="text-green-600">   {book.discount}%</span></p>
+                    <Button className="w-full mt-4">Add to Card</Button>
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>
