@@ -1,0 +1,265 @@
+{
+    "books": [
+      {
+        "id": 1,
+        "name": "The Alchemist",
+        "author": "Paulo Coelho",
+        "oldPrice": "350",
+        "price": "315", 
+        "rating": 4.7,
+        "discount": 10,
+        "coverImage": "https://covers.openlibrary.org/b/id/8225266-L.jpg"
+      },
+      {
+        "id": 2,
+        "name": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "oldPrice": "400",
+        "price": "340",
+        "rating": 4.9,
+        "discount": 15,
+        "coverImage": "https://covers.openlibrary.org/b/id/10440363-L.jpg"
+      },
+      {
+        "id": 3,
+        "name": "1984",
+        "author": "George Orwell",
+        "oldPrice": "299",
+        "price": "284",
+        "rating": 4.8,
+        "discount": 5,
+        "coverImage": "https://covers.openlibrary.org/b/id/8228691-L.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "oldPrice": "250",
+        "price": "200",
+        "rating": 4.6,
+        "discount": 20,
+        "coverImage": "https://covers.openlibrary.org/b/id/10314660-L.jpg"
+      },
+      {
+        "id": 5,
+        "name": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "oldPrice": "320",
+        "price": "282",
+        "rating": 4.2,
+        "discount": 12,
+        "coverImage": "https://covers.openlibrary.org/b/id/8004896-L.jpg"
+      },
+      {
+        "id": 6,
+        "name": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "oldPrice": "450",
+        "price": "414",
+        "rating": 4.4,
+        "discount": 8,
+        "coverImage": "https://covers.openlibrary.org/b/id/7392497-L.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Moby Dick",
+        "author": "Herman Melville",
+        "oldPrice": "300",
+        "price": "270",
+        "rating": 4.1,
+        "discount": 10,
+        "coverImage": "https://covers.openlibrary.org/b/id/8016594-L.jpg"
+      },
+      {
+        "id": 8,
+        "name": "War and Peace",
+        "author": "Leo Tolstoy",
+        "oldPrice": "600",
+        "price": "570",
+        "rating": 4.9,
+        "discount": 5,
+        "coverImage": "https://covers.openlibrary.org/b/id/12312330-L.jpg"
+      },
+      {
+        "id": 9,
+        "name": "The Odyssey",
+        "author": "Homer",
+        "oldPrice": "275",
+        "price": "225",
+        "rating": 4.3,
+        "discount": 18,
+        "coverImage": "https://covers.openlibrary.org/b/id/12816646-L.jpg"
+      },
+      {
+        "id": 10,
+        "name": "Brave New World",
+        "author": "Aldous Huxley",
+        "oldPrice": "310",
+        "price": "288",
+        "rating": 4.5,
+        "discount": 7,
+        "coverImage": "https://covers.openlibrary.org/b/id/10561265-L.jpg"
+      },
+      {
+        "id": 11,
+        "name": "Fahrenheit 451",
+        "author": "Ray Bradbury",
+        "oldPrice": "330",
+        "price": "280",
+        "rating": 4.6,
+        "discount": 15,
+        "coverImage": "https://covers.openlibrary.org/b/id/10290058-L.jpg"
+      },
+      {
+        "id": 12,
+        "name": "The Picture of Dorian Gray",
+        "author": "Oscar Wilde",
+        "oldPrice": "340",
+        "price": "299",
+        "rating": 4.3,
+        "discount": 12,
+        "coverImage": "https://covers.openlibrary.org/b/id/8206781-L.jpg"
+      },
+      {
+        "id": 13,
+        "name": "The Brothers Karamazov",
+        "author": "Fyodor Dostoevsky",
+        "oldPrice": "500",
+        "price": "400",
+        "rating": 4.9,
+        "discount": 20,
+        "coverImage": "https://covers.openlibrary.org/b/id/12345678-L.jpg"
+      },
+      {
+        "id": 14,
+        "name": "Crime and Punishment",
+        "author": "Fyodor Dostoevsky",
+        "oldPrice": "380",
+        "price": "342",
+        "rating": 4.5,
+        "discount": 10,
+        "coverImage": "https://covers.openlibrary.org/b/id/10382730-L.jpg"
+      },
+      {
+        "id": 15,
+        "name": "The Grapes of Wrath",
+        "author": "John Steinbeck",
+        "oldPrice": "420",
+        "price": "386",
+        "rating": 4.4,
+        "discount": 8,
+        "coverImage": "https://covers.openlibrary.org/b/id/7403263-L.jpg"
+      },
+      {
+        "id": 16,
+        "name": "Catch-22",
+        "author": "Joseph Heller",
+        "oldPrice": "360",
+        "price": "306",
+        "rating": 4.2,
+        "discount": 15,
+        "coverImage": "https://covers.openlibrary.org/b/id/11270824-L.jpg"
+      },
+      {
+        "id": 17,
+        "name": "The Lord of the Rings",
+        "author": "J.R.R. Tolkien",
+        "oldPrice": "900",
+        "price": "675",
+        "rating": 4.9,
+        "discount": 25,
+        "coverImage": "https://covers.openlibrary.org/b/id/10410367-L.jpg"
+      },
+      {
+        "id": 18,
+        "name": "Harry Potter and the Philosopher's Stone",
+        "author": "J.K. Rowling",
+        "oldPrice": "450",
+        "price": "405",
+        "rating": 4.8,
+        "discount": 10,
+        "coverImage": "https://covers.openlibrary.org/b/id/7659053-L.jpg"
+      },
+      {
+        "id": 19,
+        "name": "The Chronicles of Narnia",
+        "author": "C.S. Lewis",
+        "oldPrice": "370",
+        "price": "325",
+        "rating": 4.6,
+        "discount": 12,
+        "coverImage": "https://covers.openlibrary.org/b/id/7930470-L.jpg"
+      },
+      {
+        "id": 20,
+        "name": "The Hitchhiker's Guide to the Galaxy",
+        "author": "Douglas Adams",
+        "oldPrice": "300",
+        "price": "285",
+        "rating": 4.7,
+        "discount": 5,
+        "coverImage": "https://covers.openlibrary.org/b/id/7565291-L.jpg"
+      },
+      {
+        "id": 21,
+        "name": "The Fault in Our Stars",
+        "author": "John Green",
+        "oldPrice": "330",
+        "price": "297",
+        "rating": 4.4,
+        "discount": 10,
+        "coverImage": "https://covers.openlibrary.org/b/id/13601678-L.jpg"
+      },
+      {
+        "id": 22,
+        "name": "Little Women",
+        "author": "Louisa May Alcott",
+        "oldPrice": "360",
+        "price": "306",
+        "rating": 4.8,
+        "discount": 15,
+        "coverImage": "https://covers.openlibrary.org/b/id/12210139-L.jpg"
+      },
+      {
+        "id": 23,
+        "name": "Gone with the Wind",
+        "author": "Margaret Mitchell",
+        "oldPrice": "480",
+        "price": "432",
+        "rating": 4.7,
+        "discount": 10,
+        "coverImage": "https://covers.openlibrary.org/b/id/6001671-L.jpg"
+      },
+      {
+        "id": 24,
+        "name": "The Kite Runner",
+        "author": "Khaled Hosseini",
+        "oldPrice": "390",
+        "price": "312",
+        "rating": 4.9,
+        "discount": 20,
+        "coverImage": "https://covers.openlibrary.org/b/id/6386615-L.jpg"
+      },
+      {
+        "id": 25,
+        "name": "The Da Vinci Code",
+        "author": "Dan Brown",
+        "oldPrice": "550",
+        "price": "495",
+        "rating": 4.6,
+        "discount": 10,
+        "coverImage": "https://covers.openlibrary.org/b/id/6955306-L.jpg"
+      },
+      {
+        "id": 26,
+        "name": "The Book Thief",
+        "author": "Markus Zusak",
+        "oldPrice": "410",
+        "price": "369",
+        "rating": 4.8,
+        "discount": 10,
+        "coverImage": "https://covers.openlibrary.org/b/id/10469435-L.jpg"
+      }
+    ]
+  }
+  
