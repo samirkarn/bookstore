@@ -11,6 +11,10 @@ import BookDetails from "./pages/BookDetails";
 import SellerDashboard from "./pages/SellerDashboard";
 import BooksManagement from "./pages/BooksManagement";
 import BuyerManagement from "./pages/BuyerManagement";
+import BuyerProfile from "./pages/BuyerProfile";
+import SellerProfile from "./pages/SellerProfile";
+import AddBook from "./pages/AddBook";
+import SellerLayout from "./components/SellerLayout"; // Import your layout
 
 function App() {
   return (
@@ -24,13 +28,17 @@ function App() {
         <Route path='/sell-with-us' element={<SellWithUs />} />
         <Route path='/seller-signup' element={<SellerSignup />} />
         <Route path='/seller-login' element={<SellerLogin />} />
-        <Route path='/book-details' element={<BookDetails />} />
-        <Route path='/dashboard' element={<SellerDashboard />} />
-        <Route path='/books' element={<BooksManagement />} />
-        <Route path='/buyers' element={<BuyerManagement />} />
+
+        {/* Seller Routes */}
+        <Route path='/dashboard' element={<SellerLayout><SellerDashboard /></SellerLayout>} />
+        <Route path='/books' element={<SellerLayout><BooksManagement /></SellerLayout>} />
+        <Route path='/books/add-book' element={<SellerLayout><AddBook /></SellerLayout>} />
+        <Route path='/buyers' element={<SellerLayout><BuyerManagement /></SellerLayout>} />
+        <Route path='/profile' element={<SellerLayout><BuyerProfile /></SellerLayout>} />
+        <Route path='/account' element={<SellerLayout><SellerProfile /></SellerLayout>} />
       </Routes>
     </>
-  )
+  );
 }
 
 export default App;

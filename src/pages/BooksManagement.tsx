@@ -18,31 +18,25 @@ import {
     TableHead,
     TableHeader,
     TableRow,
-  } from "@/components/ui/table"
+} from "@/components/ui/table"
 import { Link } from 'react-router-dom'
-  
+
 
 const BooksManagement = () => {
     const [date, setDate] = React.useState<Date>()
 
     return (
-        <div>
-            <div className='flex gap-0'>
-                <div className='w-[20%] hidden md:inline-block'>
-                    <SideMenuBar />
-                </div>
-                <div className='w-full md:w-[80%]'>
-                    <div>
-                        <SellerTopMenu />
-                    </div>
-                    <div className='p-4 md:p-8 '>
+                <div className='w-full'>
+                    <div className=''>
                         <div className='flex flex-col gap-2 md:flex-row md:items-center justify-between'>
                             <div >
                                 <p className='text-2xl font-bold'>Books Management</p>
                             </div>
                             <div className='flex gap-2 '>
                                 <Button variant="outline">Export</Button>
-                                <Button className='items-center'><span className='text-xl font-bold mr-2'>+</span> Add New Book</Button>
+                                <Link to='/books/add-book'>
+                                    <Button className='items-center'><span className='text-xl font-bold mr-2'>+</span> Add New Book</Button>
+                                </Link>
                             </div>
                         </div>
                         <div className='flex flex-col md:flex-row gap-2 mt-4'>
@@ -106,7 +100,7 @@ const BooksManagement = () => {
                                         <TableCell>9876543210</TableCell>
                                         <TableCell>
                                             <Link to='#'>
-                                            <p className='underline text-blue-600'>View</p>
+                                                <p className='underline text-blue-600'>View</p>
                                             </Link>
                                         </TableCell>
                                     </TableRow>
@@ -115,8 +109,6 @@ const BooksManagement = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
     )
 }
 

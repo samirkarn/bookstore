@@ -6,14 +6,7 @@ const SellerDashboard = () => {
     return (
         <>
             <div>
-                <div className='flex gap-0'>
-                    <div className='w-[20%] hidden md:inline-block'>
-                        <SideMenuBar />
-                    </div>
-                    <div className='w-[80%]'>
-                        <SellerTopMenu />
-                    </div>
-                </div>
+                <p>Dashboard</p>
             </div>
         </>
     )
