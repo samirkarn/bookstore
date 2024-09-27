@@ -18,13 +18,10 @@ const SideMenuBar = ({ isOpen, toggleSidebar }: { isOpen: boolean; toggleSidebar
 
   return (
     <div
-      className={`fixed z-40 md:relative bg-slate-300 p-4 h-screen md:w-[20%] w-[60%] transition-transform duration-300 ${
+      className={`fixed z-40 md:relative bg-slate-300 p-4 min-h-screen md:w-[20%] w-[60%] transition-transform duration-300 ${
         isOpen ? 'translate-x-0' : '-translate-x-full'
       } md:translate-x-0`}
     >
-     
-
-      
       <div className='flex justify-between items-center mb-6 md:hidden'>
         <p className='text-4xl font-bold text-pink-800'>BookStore</p>
       </div>

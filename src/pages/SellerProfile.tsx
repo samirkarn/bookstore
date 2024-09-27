@@ -1,7 +1,6 @@
-import React from 'react'
-import SideMenuBar from '@/components/SideMenuBar'
-import SellerTopMenu from '@/components/SellerTopMenu'
 import { Button } from '@/components/ui/button'
+import { Link } from 'react-router-dom'
+
 const SellerProfile = () => {
     return (
 
@@ -11,7 +10,10 @@ const SellerProfile = () => {
                     <p className='text-2xl font-bold'>My Account</p>
                 </div>
                 <div className='flex gap-2 '>
+                    <Link to='/account/edit-account' >
                     <Button variant="outline">Edit Account</Button>
+                    </Link>
+                    
                 </div>
             </div>
             <div>
